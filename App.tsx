@@ -1,12 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import Primeiro from './src/components/Primeiro';
+import MultiComponents, {Componente1, Componente2} from './src/components/MultiComponents';
+import NumerosAleatorios from './src/components/NumerosAleatorios';
+import globalStyle from './src/styles/globalStyle';
+import Botao from './src/components/Botao';
+import Counter from './src/components/Counter';
 
 export default function App() {
+  const numeroRandom1 = Math.floor(Math.random() * 99) + 1;
+  const numeroRandom2 = Math.floor(Math.random() * 99) + 1;
   return (
-    <View style={styles.container}>
-      <Text>Hello World !!!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={globalStyle.app}>
+      <Counter />
+      {/* <Primeiro />
+      <Botao/>
+      <MultiComponents />
+      <Componente1 />
+      <NumerosAleatorios numero1={numeroRandom1} numero2={numeroRandom2} />
+      <NumerosAleatorios numero1={1} numero2={1} />
+      <Componente2 /> */}
+    </SafeAreaView>
   );
 }
 
