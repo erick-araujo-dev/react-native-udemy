@@ -9,6 +9,7 @@ import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import FlexBoxV1 from './src/components/layout/FlexBoxV1';
 import FlexBoxV2 from './src/components/layout/FlexBoxV2';
 import FlexBoxV3 from './src/components/layout/FlexBoxV3';
+import MegaSena from './src/components/megaSena/MegaSena';
 // import { StatusBar } from 'expo-status-bar';
 // import Primeiro from './src/components/Primeiro';
 // import MultiComponents, {Componente1, Componente2} from './src/components/MultiComponents';
@@ -23,8 +24,9 @@ export default function App() {
   // const numeroRandom2 = Math.floor(Math.random() * 99) + 1;
   return (
     <SafeAreaView style={globalStyle.app}>
-      <FlexBoxV3/>
+      <MegaSena qtdNumero={5}/>
       {/* <Primeiro />
+      <FlexBoxV3/>
       <FlexBoxV2/>
       <FlexBoxV1/>
       <InputComponent></InputComponent>
