@@ -11,7 +11,8 @@ export default StyleSheet.create({
     },
 
     textGrande: {
-        fontSize: 24
+        fontSize: 24,
+        color: "#fff"
     },
     
     inputText: {
@@ -34,7 +35,8 @@ export default StyleSheet.create({
         width: 100,
         alignItems: "center",
         justifyContent: "center",
-        borderRadius: 5
+        borderRadius: 5,
+        
     }
 
 })

@@ -24,7 +24,7 @@ export default function App() {
   // const numeroRandom2 = Math.floor(Math.random() * 99) + 1;
   return (
     <SafeAreaView style={globalStyle.app}>
-      <MegaSena qtdNumero={5}/>
+      <MegaSena/>
       {/* <Primeiro />
       <FlexBoxV3/>
       <FlexBoxV2/>
